@@ -23,7 +23,9 @@ const Header = () => {
       </header>
       <div className="hero">
         <div className="hero-content">
-          <button className="order-btn">Order Now</button>
+          <a href="/order" className="btn btn-lg">
+            Order Now
+          </a>
         </div>
       </div>
     </>

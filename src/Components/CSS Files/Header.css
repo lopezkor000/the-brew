@@ -53,3 +53,7 @@
 .btn:hover {
   background-color: orange;
 }
+
+.btn-lg {
+  font-size: 30px;
+}
