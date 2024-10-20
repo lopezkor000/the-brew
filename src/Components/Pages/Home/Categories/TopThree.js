@@ -3,14 +3,17 @@ import Card from "./Card/Card";
 const TopThree = () => {
   const getTopThree = () => {
     let topList = [];
+    const coffees = ["mochi", "spice-girls", "spooky"];
     for (let i = 0; i < 3; i++) {
       topList.push(
-        <Card
-          img="logo.png"
-          title={`Title ${i}`}
-          text={`text ${i}`}
-          className="col mx-5"
-        />
+        <>
+          <Card
+            img={`${coffees[i]}.jpg`}
+            title={`${coffees[i]}`}
+            text={`${coffees[i]}`}
+            className="col"
+          />
+        </>
       );
     }
     return topList;

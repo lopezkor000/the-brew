@@ -3,11 +3,12 @@ import Card from "./Card/Card";
 const Events = () => {
   const getEvents = () => {
     let topList = [];
+    const coffees = ["cina", "espresso", "frap"];
     for (let i = 0; i < 3; i++) {
       topList.push(
         <>
           <Card
-            img="logo.png"
+            img={`${coffees[i]}.jpg`}
             title={`Title ${i}`}
             text={`text ${i}`}
             className="col"

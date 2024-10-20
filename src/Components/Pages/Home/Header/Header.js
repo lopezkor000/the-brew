@@ -9,22 +9,17 @@ const Header = () => {
         <div className="logo">
           <img src="logo.png" alt="The Brew Logo" className="logo-image" />
         </div>
-        <nav className="nav-menu">
-          <ul>
-            <li>
-              <a href="/">Menu</a>
-            </li>
-            <li>
-              <a href="/order">Order Now</a>
-            </li>
-            <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="/contact">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <a href="/menu" className="btn">
+            Menu
+          </a>
+          <a href="/about" className="btn">
+            About
+          </a>
+          <a href="/contact" className="btn">
+            Contact Us
+          </a>
+        </div>
       </header>
       <div className="hero">
         <div className="hero-content">

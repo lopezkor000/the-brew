@@ -45,4 +45,11 @@
   .nav-menu ul li a:hover {
     background-color: darkorange;
   }
-  
+
+.btn {
+  background-color: yellow;
+}
+
+.btn:hover {
+  background-color: orange;
+}

@@ -5,7 +5,7 @@ const DrinkOfTheMonth = () => {
     <div className="m-5">
       <h1 className="m-5">Drink of the Month</h1>
       <div className="row align-items-center w-75">
-        <Card img="logo.png" title="Title" text="text" className="col" />
+        <Card img="caram.jpg" title="Title" text="text" className="col" />
         <p className="col p-5 text-left">
           Laboris laborum enim voluptate sunt sunt dolor aliqua adipisicing esse
           esse. Irure exercitation ipsum laborum nisi ipsum est reprehenderit
