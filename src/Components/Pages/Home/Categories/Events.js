@@ -1,14 +1,28 @@
 import Card from "./Card/Card";
+import { getImage } from "../../../db/db";
+import { useState, useEffect } from "react";
 
 const Events = () => {
+  const [loading, setLoading] = useState(true);
+  const [coffee, setCoffee] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      let img = await getImage("cina.jpg");
+      let img2 = await getImage("espresso.jpg");
+      let img3 = await getImage("frap.jpg");
+      setCoffee([img, img2, img3]);
+      setLoading(false);
+    })();
+  }, [loading]);
+
   const getEvents = () => {
     let topList = [];
-    const coffees = ["cina", "espresso", "frap"];
     for (let i = 0; i < 3; i++) {
       topList.push(
         <Card
           key={i}
-          img={`${coffees[i]}.jpg`}
+          img={`${coffee[i]}`}
           title={`Title ${i}`}
           text={`text ${i}`}
           className="col"

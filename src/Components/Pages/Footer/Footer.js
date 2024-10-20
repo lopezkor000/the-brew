@@ -1,10 +1,10 @@
-function Footer() {
+function Footer(props) {
   return (
     <div
       className="d-flex justify-content-evenly text-white w-100 py-2"
       style={{ backgroundColor: "#332219", height: "8rem" }}
     >
-      <img src="The_Brew_Logo.png" alt="" />
+      <img src={props.img} alt="" />
       <div>
         <div className="col">
           <a

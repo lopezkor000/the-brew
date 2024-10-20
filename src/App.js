@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -10,8 +10,20 @@ import Home from "./Components/Pages/Home/Home";
 // import About from "./Components/Pages/About";
 // import Contact from "./Components/Pages/Contact";
 import Footer from "./Components/Pages/Footer/Footer";
+import { getImage } from "./Components/db/db";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [logo, setLogo] = useState("");
+
+  useEffect(() => {
+    (async () => {
+      const img = await getImage("logo.png");
+      setLogo(img);
+      setLoading(false);
+    })();
+  }, [loading]);
+
   return (
     <Router>
       <Routes>
@@ -21,7 +33,7 @@ function App() {
         <Route path="/contact" element={<Contact />} /> */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      <Footer />
+      <Footer img={logo} />
     </Router>
   );
 }
