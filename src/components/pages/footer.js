@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div
-      className="d-flex justify-content-evenly text-white position-absolute bottom-0 w-100"
+      className="d-flex justify-content-evenly text-white position-absolute bottom-0 w-100 py-2"
       style={{ backgroundColor: "#332219", height: "10%" }}
     >
       <img src="The_Brew_Logo.png" alt="" />
