@@ -6,15 +6,15 @@ const Header = () => {
   return (
     <>
         <div className="logo">
-          <img src="logo.png" alt="The Brew Logo" className="logo-image" />
+          <a href="/"><img src="logo.png" alt="The Brew Logo" className="logo-image" /></a>
         </div>
         <nav className="nav-menu">
           <ul>
             <li>
-              <a href="/">Menu</a>
+              <a href="/menu">Menu</a>
             </li>
             <li>
-              <a href="/order">Order Now</a>
+              <a href="/menu">Order Now</a>
             </li>
             <li>
               <a href="/about">About</a>

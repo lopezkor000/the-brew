@@ -18,9 +18,6 @@ const Header = () => {
           <li><Link to="/contact">Contact Us</Link></li>
         </ul>
       </nav>
-      <div className="cart-logo">
-        <span>Cart logo</span>
-      </div>
     </header>
   );
 };

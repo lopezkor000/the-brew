@@ -9,8 +9,7 @@ const Events = () => {
         <>
           <Card
             img={`${coffees[i]}.jpg`}
-            title={`Title ${i}`}
-            text={`text ${i}`}
+            
             className="col"
           />
         </>
@@ -21,7 +20,7 @@ const Events = () => {
 
   return (
     <div className="m-5">
-      <h1 className="m-5">Events</h1>
+      <h1 className="m-5">Events Board</h1>
       <div className="row d-flex justify-content-evenly">{getEvents()}</div>
     </div>
   );

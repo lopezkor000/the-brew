@@ -23,7 +23,7 @@ const Header = () => {
       </header>
       <div className="hero">
         <div className="hero-content">
-          <button className="order-btn">Order Now</button>
+          <a href="/menu"><button className="order-btn">Order Now</button></a>
         </div>
       </div>
     </>

@@ -6,15 +6,15 @@ const Header = () => {
   return (
     <>
         <div className="logo">
-          <img src="logo.png" alt="The Brew Logo" className="logo-image" />
+          <a href="/"><img src="logo.png" alt="The Brew Logo" className="logo-image" /></a>
         </div>
         <nav className="nav-menu">
           <ul>
             <li>
-              <a href="/">Menu</a>
+              <a href="/menu">Menu</a>
             </li>
             <li>
-              <a href="/order">Order Now</a>
+              <a href="/menu">Order Now</a>
             </li>
             <li>
               <a href="/about">About</a>
@@ -29,14 +29,17 @@ const Header = () => {
     <div className="container" style={{paddingLeft: 0, paddingTop: 50, display: "flex", justifyContent: "space-evenly"}}>
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel" style={{width: 700, height: 620, display: "inline-block"}}>
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="6000">
+            <div class="carousel-item active" data-bs-interval="5000">
             <img src="https://img1.wsimg.com/isteam/ip/43790f3a-7f5f-45bb-b139-b421418844f5/k-archive-b196071d02ed31683548beb658153382836.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280" class="d-block" alt="..." style={{borderRadius: 25, width: 700, height: 600}}></img>
             </div>
-            <div class="carousel-item" data-bs-interval="6000">
+            <div class="carousel-item" data-bs-interval="5000">
             <img src="https://coffeebusiness.com/wp-content/uploads/2019/08/14tenents-pt2.jpg" class="d-block " alt="..." style={{borderRadius: 25, width: 700, height: 600}}></img>
             </div>
-            <div class="carousel-item" data-bs-interval="6000">
+            <div class="carousel-item" data-bs-interval="5000">
             <img src="https://blog.clover.com/wp-content/uploads/2023/05/barista-making-a-latte-with-cafe-equipment.jpg" class="d-block" alt="..." style={{borderRadius: 25, width: 700, height: 600}}></img>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://dailycoffeenews.com/wp-content/uploads/2018/10/coffee-801781_1280.jpg" class="d-block" alt="..." style={{borderRadius: 25, width: 700, height: 600}}></img>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

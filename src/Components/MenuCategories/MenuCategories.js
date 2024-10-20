@@ -5,7 +5,7 @@ import "../../../CSS Files/MenuCategories.css";
 
 const MenuCategories = () => {
   const categories = [
-    { name: "Seasonal Drinks", path: "/menu/seasonal-drinks", image: "https://angelinos.com/cdn/shop/articles/pumpkin_spice.jpg?v=1598989599" },
+    { name: "Seasonal Drinks", path: "/menu/seasonal-drinks", image: spice-girls },
     { name: "Classics", path: "/menu/classics", image: "category2.png" },
     { name: "Frappuccinos", path: "/menu/frappuccinos", image: "category3.png" },
     { name: "Tea", path: "/menu/tea", image: "category4.png" },
@@ -21,7 +21,7 @@ const MenuCategories = () => {
           <div className="category-item" key={category.name}>
             <Link to={category.path}>
               <div className="category-photo">
-                <img src={category.image} alt={category.name} />
+                <img src={`${category.image}.jpg`}/>
               </div>
               <div className="category-name">{category.name}</div>
             </Link>

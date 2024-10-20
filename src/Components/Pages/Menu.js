@@ -51,9 +51,6 @@ const Menu = () => {
             <li><a href="/contact" style={{color: "white"}}>Contact Us</a></li>
           </ul>
         </nav>
-        <div className="cart-logo">
-          Cart logo <span className="cart-count">1</span>
-        </div>
       </header>
 
       <h1 className="menu-title">Menu</h1>
@@ -68,7 +65,7 @@ const Menu = () => {
               onClick={() => handleCategoryClick(category)}
             >
               <div className="category-image">
-                <span>Photo of category</span>
+                <img src='cina.jpg' style={{height: 100, width: 100, borderRadius: 35}}></img>
               </div>
               <p className="category-name">{category}</p>
             </div>
@@ -87,7 +84,7 @@ const Menu = () => {
             {drinksData[selectedCategory].map((drink, index) => (
               <div key={index} className="drink-card">
                 <div className="drink-image">
-                  <span>Photo of Drink</span>
+                <img src='espresso.jpg' style={{height: 70, width: 70, borderRadius: 25}}></img>
                 </div>
                 <p className="drink-name">{drink}</p>
               </div>
