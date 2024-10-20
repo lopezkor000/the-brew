@@ -6,14 +6,13 @@ const Events = () => {
     const coffees = ["cina", "espresso", "frap"];
     for (let i = 0; i < 3; i++) {
       topList.push(
-        <>
-          <Card
-            img={`${coffees[i]}.jpg`}
-            title={`Title ${i}`}
-            text={`text ${i}`}
-            className="col"
-          />
-        </>
+        <Card
+          key={i}
+          img={`${coffees[i]}.jpg`}
+          title={`Title ${i}`}
+          text={`text ${i}`}
+          className="col"
+        />
       );
     }
     return topList;

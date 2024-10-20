@@ -6,14 +6,13 @@ const TopThree = () => {
     const coffees = ["mochi", "spice-girls", "spooky"];
     for (let i = 0; i < 3; i++) {
       topList.push(
-        <>
-          <Card
-            img={`${coffees[i]}.jpg`}
-            title={`${coffees[i]}`}
-            text={`${coffees[i]}`}
-            className="col"
-          />
-        </>
+        <Card
+          key={i}
+          img={`${coffees[i]}.jpg`}
+          title={`${coffees[i]}`}
+          text={`${coffees[i]}`}
+          className="col"
+        />
       );
     }
     return topList;

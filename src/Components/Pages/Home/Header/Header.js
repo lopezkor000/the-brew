@@ -2,14 +2,14 @@ import React from "react";
 import "../../../CSS Files/Hero.css";
 import "../../../CSS Files/Header.css";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <header className="header">
         <div className="logo">
-          <img src="logo.png" alt="The Brew Logo" className="logo-image" />
+          <img src={props.img} alt="The Brew Logo" className="logo-image" />
         </div>
-        <div class="btn-group" role="group" aria-label="Basic example">
+        <div className="btn-group" role="group" aria-label="Basic example">
           <a href="/menu" className="btn">
             Menu
           </a>
