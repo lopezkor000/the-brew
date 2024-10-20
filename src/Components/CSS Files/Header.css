@@ -1,0 +1,48 @@
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Adjust padding */
+    background-color: transparent;
+    position: absolute;
+    width: 80%; /* Adjust the width to bring elements closer to the center */
+    left: 50%; /* Position the header to the center */
+    transform: translateX(-50%); /* Center the header */
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo-circle {
+    background-color: yellow;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  
+  .nav-menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px; /* Maintain enough space between menu items */
+  }
+  
+  .nav-menu ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    padding: 10px 20px; /* Keep button size */
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-menu ul li a:hover {
+    background-color: darkorange;
+  }
+  
