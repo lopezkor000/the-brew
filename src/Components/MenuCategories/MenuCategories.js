@@ -5,7 +5,7 @@ import "../../../CSS Files/MenuCategories.css";
 
 const MenuCategories = () => {
   const categories = [
-    { name: "Seasonal Drinks", path: "/menu/seasonal-drinks", image: "category1.png" },
+    { name: "Seasonal Drinks", path: "/menu/seasonal-drinks", image: "https://angelinos.com/cdn/shop/articles/pumpkin_spice.jpg?v=1598989599" },
     { name: "Classics", path: "/menu/classics", image: "category2.png" },
     { name: "Frappuccinos", path: "/menu/frappuccinos", image: "category3.png" },
     { name: "Tea", path: "/menu/tea", image: "category4.png" },

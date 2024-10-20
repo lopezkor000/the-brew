@@ -43,12 +43,12 @@ const Menu = () => {
   return (
     <div className="menu-page">
       <header className="menu-header">
-        <div className="logo">logo</div>
+        <a href="/"><img src='logo.png' style={{width: 150, height: 80}}></img></a>
         <nav className="menu-nav">
           <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact Us</li>
+            <li><a href="/menu" style={{color: "white"}}>Menu</a></li>
+            <li><a href="/about" style={{color: "white"}}>About</a></li>
+            <li><a href="/contact" style={{color: "white"}}>Contact Us</a></li>
           </ul>
         </nav>
         <div className="cart-logo">
