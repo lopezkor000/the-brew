@@ -1,0 +1,174 @@
+/* Menu Page Styling */
+.menu-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  /* Header Styling */
+  .menu-header {
+    width: 100%;
+    padding: 20px;
+    background-color: #4a2602;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .menu-nav ul li {
+    font-size: 18px;
+    color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .menu-nav ul li:hover {
+    color: #ffcc33;
+  }
+  
+  .cart-logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .cart-count {
+    background-color: #ffcc33;
+    color: #4a2602;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+  
+  /* Title Styling */
+  .menu-title {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #4a2602;
+    font-weight: bold;
+  }
+  
+  /* Back Button Styling */
+  .back-button {
+    background-color: #4a2602;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #ffcc33;
+    color: #4a2602;
+  }
+  
+  /* Category Grid Styling */
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .category-card {
+    background-color: #ffcc33;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-image {
+    width: 120px;
+    height: 120px;
+    background-color: #4a2602;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc33;
+    margin-bottom: 15px;
+  }
+  
+  .category-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a2602;
+  }
+  
+  /* Drinks List Styling */
+  .drinks-list {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .drinks-list h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4a2602;
+  }
+  
+  /* Drink Grid Styling */
+  .drink-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .drink-card {
+    background-color: #ffcc33;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .drink-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .drink-image {
+    width: 80px;
+    height: 80px;
+    background-color: #4a2602;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc33;
+    margin-bottom: 10px;
+  }
+  
+  .drink-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a2602;
+  }
+  
