@@ -10,7 +10,7 @@ import Menu from "./Components/Pages/Menu";
 import About from "./Components/Pages/About";
 import Contact from "./Components/Pages/Contact";
 import Footer from "./Components/Pages/Footer/Footer";
-import Chatbot from "./Components/Chatbot/Chatbot";  // Importing Chatbot component
+import Chatbot from "./Components/Chatbot/Chatbot"; 
 
 function App() {
   return (
